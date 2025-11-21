@@ -1,0 +1,11 @@
+input[type="number"]{
+    border: 3px solid green;
+} 
+
+
+.bo{
+    border: 3px solid yellow;
+}
+.boo{
+    border: 4px solid pink;
+}

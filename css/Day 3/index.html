@@ -1,0 +1,140 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .nav{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: space-between;
+
+
+        }
+        .nav a{
+            padding: .5rem 1rem;
+        }
+
+ .cards {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  min-height:200px ;
+  justify-content: center;
+  background-color: yellow;
+  box-sizing: border-box;  
+  padding: 20px;
+   
+}
+
+
+
+      .card{
+        
+        border: 2px solid green;
+        padding: 120px;
+      }
+    </style>
+
+
+</head>
+<body>
+    <nav class="nav">
+  <a>Home</a>
+  <a>About</a>
+  <a>Products</a>
+  <a>Contact</a>
+</nav>
+
+
+<section class="cards" >
+    <div class="card">card1</div>
+    <div class="card">card2</div>
+    <div class="card">card3</div>
+</section>
+
+
+
+
+   
+    </div>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border: 1px solid saddlebrown;
+            gap: 30px;
+
+        }
+        .inner{
+            background-color: aquamarine;
+          
+        }
+        .toolbar{
+            display: flex;
+            flex-direction: column;
+        }
+        .spacer{
+            margin-left: auto;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">Centered</div>
+        <div class="inner">Centered</div>
+        <div class="inner">Centered</div>
+    </div>
+
+
+    <pre>
+| Concept           | Description                                                                     | Example                           |
+| ----------------- | ------------------------------------------------------------------------------- | --------------------------------- |
+| `display: flex`   | Turns container into flex formatting context; direct children become flex items | `display:flex;`                   |
+| `flex-direction`  | Sets main axis direction (`row`/`column`/`*-reverse`)                           | `flex-direction: column;`         |
+| `justify-content` | Distributes leftover space along main axis (`center`, `space-between`)          | `justify-content: space-between;` |
+| `align-items`     | Aligns items along cross axis (`stretch`, `center`, `baseline`)                 | `align-items: center;`            |
+| `gap`             | Spacing between flex items (better than child margins)                          | `gap: 1rem;`                      |
+
+</pre>
+
+
+
+    <div class="toolbar">
+        <button>back</button>
+        <div class="spacer"></div>
+        <button>save</button>
+        <button>save</button>
+        <button>save</button>
+    </div>
+
+
+
+    
+</body>
+</html>
+
+

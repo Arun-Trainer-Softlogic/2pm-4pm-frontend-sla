@@ -1,0 +1,51 @@
+<style>
+.container {
+  display: flex;
+  gap: 10px;
+  height: 150px;
+  margin-bottom: 30px;
+  background: #f3f3f3;
+  border: 2px solid #000;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  background: #87CEFA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+</style>
+
+
+<h2>align-items: flex-start</h2>
+<div class="container" style="align-items:flex-start;">
+  <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+</div>
+
+<h2>align-items: flex-end</h2>
+<div class="container" style="align-items:flex-end;">
+  <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+</div>
+
+<h2>align-items: center</h2>
+<div class="container" style="align-items:center;">
+  <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+</div>
+
+<h2>align-items: baseline</h2>
+<div class="container" style="align-items:baseline;">
+  <div class="box" style="font-size:20px;">1</div>
+  <div class="box" style="font-size:40px;">2</div>
+  <div class="box" style="font-size:30px;">3</div>
+</div>
+
+<h2>align-items: stretch</h2>
+<div class="container" style="align-items:stretch;">
+  <div class="box" style="height:auto;">1</div>
+  <div class="box" style="height:auto;">2</div>
+  <div class="box" style="height:auto;">3</div>
+</div>

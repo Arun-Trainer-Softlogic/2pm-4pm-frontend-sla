@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.clearfix::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+   
+
+        .container-with-clearfix{
+            border: 2px solid black;
+            padding: 20px;
+
+        }
+
+        .box{
+           float: left;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+        }
+        .footer{
+            background-color: lightcoral;
+            padding: 10px;
+        }
+        span::before{
+            content: "L";
+       
+            font-size: 20px;
+            color: red;
+            background-color: yellow;
+            font-size: larger;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-with-clearfix clearfix">
+  <div class="box">Floated Box</div>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi numquam cumque officia totam commodi vitae blanditiis earum itaque. Ab mollitia assumenda fuga iure quo hic unde magnam sit pariatur quaerat, molestias blanditiis amet maxime eum provident. Consectetur optio magni molestias veritatis alias a delectus. Eum aliquid nesciunt quo dolorum nihil.</p>
+  <span>Lorem ipsum dolor sit amet.</span>
+  <span>Lorem ipsum dolor sit amet.</span>
+
+</div>
+<div class="footer">Footer content will sit below the container</div>
+
+
+
+
+<p> <span>orem  btrrrrrr</span>
+  orem ipsum dolor sit amet consectetur adipisicing elit. Odio fugit accusamus culpa omnis!</p>
+
+
+
+</body>
+</html>

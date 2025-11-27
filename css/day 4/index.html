@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Colors, Backgrounds, Text, Fonts & Positioning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        display: flex;
+        gap: 15px;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+      }
+      .hero {
+        height: 200px;
+        background: linear-gradient(to right, #3498db, #70b107);
+      }
+      p {
+        font-family: "Science Gothic", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "slnt" 0, "wdth" 100, "CTRS" 0;
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 5px 2px 5px rgba(0, 0, 23, 0.5);
+      }
+      h1{
+        font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>text and font styling</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio hic eaque
+      <br />
+      molestias quod laborum accusantium cumque atque, omnis voluptatibus <br />
+      excepturi voluptate repudiandae perferendis. Consequatur aut expedita,
+      <br />
+      repudiandae eligendi delectus dolorem.
+    </p>
+
+    <h1>CSS Colors, Backgrounds, Text, Fonts & Positioning</h1>
+
+    <div class="container">
+      <div class="box" style="background-color: red">box1</div>
+      <div class="box" style="background-color: #3498db">box2</div>
+      <div class="box" style="background-color: rgb(255, 150, 3)">box3</div>
+      <div class="box" style="background-color: hsl(120, 70%, 40%)">box4</div>
+    </div>
+
+    <div class="hero"></div>
+  </body>
+</html>

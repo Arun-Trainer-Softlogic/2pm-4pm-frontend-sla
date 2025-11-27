@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSITIONING</title>
+    <style>
+      .box {
+        width: 120px;
+        height: 60px;
+        background-color: lightblue;
+        margin: 10px;
+        position: static;
+        top: 50px;
+      }
+      .rr {
+        width: 120px;
+        height: 60px;
+        background-color: rgb(75, 122, 209);
+        margin: 10px;
+        position: relative;
+        top: 20px;
+        left: 40px;
+      }
+      .parent {
+        width: 300px;
+        height: 200px;
+        background-color: lightgray;
+        margin: 20px;
+        position: relative;
+        margin: 50px;
+      }
+
+      .child {
+        width: 100px;
+        height: 50%;
+        background-color: crimson;
+        position: absolute;
+      }
+
+      .fixed-btn {
+        width: 120px;
+        padding: 10px;
+        background-color: green;
+        columns: white;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+      }
+      header {
+        position: sticky;
+        top: 0px;
+        background-color: purple;
+        color: whitesmoke;
+        padding: 15px;
+        font-size: 20px;
+      }
+      .x1 {
+        width: 150px;
+        height: 150px;
+        background-color: green;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        z-index: -5;
+      }
+      .x2 {
+        width: 150px;
+        height: 150px;
+        background: red;
+        position: absolute;
+        top: 80px;
+        left: 80px;
+        z-index: -3;
+      }
+      .x3{
+        width: 150px;
+        height: 150px;
+        background: rgb(0, 4, 253);
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box">static Box</div>
+    <div class="rr">Relative</div>
+    <div class="parent">
+      <div class="child">Absolute</div>
+    </div>
+
+    <button class="fixed-btn">Hellpuuu</button>
+
+    <header>stickey bar</header>
+    <p style="height: 1000px; background-color: aqua">scoll down</p> -->
+
+    <div class="box x1"></div>
+    <div class="box x2"></div>
+    <div class="box x3"></div>
+  </body>
+</html>

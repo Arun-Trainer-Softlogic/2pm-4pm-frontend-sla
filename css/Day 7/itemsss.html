@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        gap: 5px;
+        background-color: dodgerblue;
+        padding: 15px;
+        grid-template-areas: 
+        'myheader myheader . . .'
+        'myheader myheader  . . .';
+      }
+
+      .container div {
+        background-color: #f84d4d;
+        text-align: center;
+        padding: 10px;
+        font-size: 30px;
+      }
+
+      .item1 {
+        grid-area: myheader;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item5">6</div>
+    </div>
+  </body>
+</html>

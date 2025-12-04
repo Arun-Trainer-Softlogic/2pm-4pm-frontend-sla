@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .box{
+            width: 250px;
+            height: 150px;
+            border: solid 2px black;
+            overflow: hidden;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+        }
+        .title{text-align: center; 
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Fill</div>
+
+        <div class="box">
+            <img src="./img/1.jpg" alt="" style="object-fit: fill;">
+        </div>
+
+
+
+         <div class="title">contain</div>
+
+        <div class="box">
+            <img src="./img/2.jpg" alt="" style="object-fit: contain;">
+        </div>
+
+
+     <div class="title">cover</div>
+
+        <div class="box">
+            <img src="./img/1.jpg" alt="" style="object-fit: cover;">
+        </div>
+
+        <div class="title">None</div>
+
+        <div class="box">
+            <img src="./img/4.jpg" alt="" style="object-fit: cover;">
+        </div>
+
+
+        <div class="title">scale-down</div>
+        <div class="box">
+            <img src="./img/5.jpg" alt="">
+        </div>
+</div>
+        
+
+    
+    
+
+
+</body>
+</html>

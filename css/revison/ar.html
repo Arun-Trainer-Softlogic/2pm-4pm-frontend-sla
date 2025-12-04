@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Box shadow
+
+    </title>
+    <style>
+ 
+        .container{
+            display: grid;
+            background-color: lightseagreen;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 60%;
+            aspect-ratio: 3;
+
+        }
+
+        .container .box{
+            width: 60%;
+            margin: 2px;
+            aspect-ratio: 2;
+            background-color: lightcoral;
+           
+
+        }
+
+        .container .myDiv{
+            border: solid 5px black;
+            background-color: coral;
+           
+        }
+    </style>
+</head>
+<body>
+    
+
+
+
+
+
+    <div class="container">
+        <div class="box normalDiv"></div>
+        <div class="box myDiv"></div>
+        <div class="box normalDiv"></div>
+        <div class="box normalDiv"></div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ratio</title>
+
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            
+
+
+        }
+
+        .card{
+            border: solid 2px black;
+            flex: 1 1 calc(33.33% - 20px);
+            background-color: #4444ff;
+            aspect-ratio: 4 /5;
+            color: #fff;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+               }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="card">16.9</div>
+        <div class="card">16.9</div>
+        <div class="card">16.9</div>
+    </div>
+</body>
+</html>

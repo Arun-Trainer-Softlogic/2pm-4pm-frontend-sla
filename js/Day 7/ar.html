@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="task" />
+
+    <button onclick="addTask()">ADD</button>
+
+    <ul id="tasks"></ul>
+
+    <script>
+      function addTask() {
+        const input = document.getElementById("task");
+        const ul = document.getElementById("tasks");
+
+        if (input.value === "") return;
+
+        const li = document.createElement("li");
+        li.textContent = input.value;
+
+        li.onclick = function () {
+          ul.removeChild(li);
+        };
+
+        ul.appendChild(li)
+
+        input.value = ""
+      }
+    </script>
+  </body>
+</html>

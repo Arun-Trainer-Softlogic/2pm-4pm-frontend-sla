@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>admission form</h1>
+
+    <form id="myform">
+      <label> Name</label>
+      <input type="text" name="name" />
+      <label>Age</label>
+      <input type="number" name="age" />
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="firstname" />
+      <input type="radio" value="male" name="gender" />
+      <label>female</label>
+      <input type="radio" value="female" name="gender" />
+      <input id="clip">
+
+
+
+      <button type="submit">submit</button>
+    </form>
+
+    <script>
+      document.getElementById("myform").addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        alert("form Submitted");
+      });
+
+      const clip = document.getElementById("clip" )
+      clip.addEventListener("copy" ,() => {
+        alert("text copied ")
+      })
+     
+    </script>
+  </body>
+</html>

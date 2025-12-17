@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <button id="btn">Click me</button>
+
+    <div id="box" style="width: 100px; height: 100px; background-color: red">
+      box
+    </div>
+
+    <input type="text" id="input" placeholder="type something" />
+
+    <script>
+      const button = document.getElementById("btn");
+      const box = document.getElementById("box");
+      const int = document.getElementById("input");
+
+      btn.addEventListener("dblclick", () => {
+        alert("Button has been clicked");
+      });
+
+      box.addEventListener("mouseover", () => {
+        box.style.background = "green";
+      });
+      box.addEventListener("mouseout", () => {
+        box.style.background = "red";
+      });
+
+      int.addEventListener("keydown", (e) => {
+        console.log("key has been pressed : ", e.key);
+      });
+    </script>
+  </body>
+</html>

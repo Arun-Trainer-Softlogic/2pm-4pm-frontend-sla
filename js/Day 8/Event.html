@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling and capturing</title>
+  </head>
+  <body>
+    <div id="parent">
+        parent 
+      <div id="child">child</div>
+    </div>
+
+    <script>
+        const parent = document.getElementById("parent");
+        const child = document.getElementById("child")
+
+
+        parent.addEventListener("click", ()=> {
+            alert("parent clicked");
+        }, true)
+
+        child.addEventListener("click" , ()=>{
+            alert("child clicked" );
+            
+        } )
+
+
+    </script>
+  </body>
+</html>

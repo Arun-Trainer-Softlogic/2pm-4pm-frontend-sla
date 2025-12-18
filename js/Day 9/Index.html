@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- error is a problem that stops or effects the normal execution of a code  -->
+
+    <input
+      type="number"
+      name="number"
+      id="num"
+      placeholder="Enter your Number "
+    />
+    <button onclick="checkNumber()">Check</button>
+    <p id="output"></p>
+    <script>
+      function checkNumber() {
+        try {
+          let value = document.getElementById("num").value;
+          // Empty check
+
+          
+          if (value === "") {
+            throw new Error("Input cannot be empty");
+          }
+
+          // Alphabet / invalid number check
+          if (isNaN(value)) {
+            throw new Error("Only numbers are allowed");
+          }
+
+          // Convert to number
+          value = Number(value);
+          // Negative number check
+
+
+          if (value < 0) {
+            throw new Error("Number must be positive");
+          }
+
+
+
+          document.getElementById("output").innerText = "Valid Number";
+        } catch (error) {
+          document.getElementById("output").innerText = error.message;
+        }
+      }
+    </script>
+  </body>
+</html>

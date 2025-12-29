@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<hr>
+
+
+<button onclick="loadData()">Load users </button>
+<ul id="users"></ul>
+
+
+<hr>
+
+
+
+
+<script>
+
+function loadData(){
+    fetch("https://api.github.com/users/arun-cloud-dev/followers")
+
+
+    .then(response => response.json())
+    .then (data => {
+        const list = document.getElementById("users")
+        list.innerHTML =""
+
+
+        data.forEach(user => {
+            const li = document.createElement("li");
+            li.textContent = user.login + " - " + user.id;
+            list.appendChild(li)
+            
+        });
+    })
+    .catch (error => console.log(error))
+}
+
+
+const user = {
+  name: "Arun",
+  age: 28,
+  role: "Trainer"
+}
+
+
+localStorage.setItem("userData" , JSON.stringify(user))
+
+
+const storedUser = JSON.parse(localStorage.getItem("userData"))
+
+console.log(storedUser.name)
+console.log(storedUser.role)
+
+
+localStorage.removeItem("userData")
+
+
+
+
+
+
+</script>
+
+</body>
+</html> 

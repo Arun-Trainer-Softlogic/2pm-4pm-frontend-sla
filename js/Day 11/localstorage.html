@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="name" id="name" placeholder="Enter your name " />
+    <input type="number" name="age" id="age" placeholder="Enter your age " />
+    <button onclick="saveData()">Save</button>
+    <button onclick="LoadData()">Load</button>
+
+    <p id="output"></p>
+
+    <script>
+      function saveData() {
+        const user = {
+          name: document.getElementById("name").value,
+          age: document.getElementById("age").value,
+        };
+        localStorage.setItem("user", JSON.stringify(user));
+        alert("Data Saved !");
+      }
+
+      
+      function LoadData() {
+        const data = JSON.parse(localStorage.getItem("user"));
+
+        if (data) {
+          document.getElementById(
+            "output"
+          ).innerText = `Name : ${data.name}, Age : ${data.age}`;
+        } else {
+          document.getElementById("output").innerText =
+            "No data seen in local storage ";
+        }
+      }
+
+
+   
+    </script>
+  </body>
+</html>

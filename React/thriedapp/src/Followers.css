@@ -1,0 +1,123 @@
+/* PAGE */
+.followers-page {
+  min-height: 100vh;
+  background: #f4f6fb;
+  transition: background 0.4s ease;
+}
+
+/* DARK MODE BACKGROUND */
+.followers-page.dark {
+  background: #0f172a;
+}
+
+/* TOGGLE */
+.dark-toggle {
+  text-align: right;
+  padding: 20px;
+}
+
+.dark-toggle button {
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #667eea;
+  color: white;
+}
+
+/* CONTAINER */
+.followers-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* GRID */
+.followers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+/* FLIP CARD */
+.flip-card {
+  perspective: 1000px;
+  height: 240px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* FRONT & BACK */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  transition: background 0.4s, color 0.4s;
+}
+
+/* LIGHT MODE */
+.flip-card-front {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.flip-card-back {
+  background: white;
+  color: #333;
+  transform: rotateY(180deg);
+}
+
+/* DARK MODE */
+.followers-page.dark .flip-card-front {
+  background: linear-gradient(135deg, #1e293b, #334155);
+}
+
+.followers-page.dark .flip-card-back {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* IMAGE */
+.flip-card-front img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+/* LINK */
+.flip-card-back a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.followers-page.dark .flip-card-back a {
+  color: #93c5fd;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .followers-grid {
+    grid-template-columns: 1fr;
+  }
+}

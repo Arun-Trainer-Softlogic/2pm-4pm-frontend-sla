@@ -9,6 +9,9 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Login from './Login'
 import Dashboard from './Dashboard'
+import Products from './Product'
+import Services from './Services'
+import ServicesPage from './ServicesPage'
 
 
 function App() {
@@ -17,10 +20,10 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<h1>Home Page</h1>} />
-        <Route path="/about" element={<h1>About Page</h1>} />
-        <Route path="/services" element={<h1>Services Page</h1>} />
-        <Route path="/products" element={<h1>Products Page</h1>} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/services" element={<ServicesPage/>} />
+        <Route path="/products" element={<Products/>} />
         <Route path="/blog" element={<h1>Blog Page</h1>} />
         <Route path="/contact" element={<h1>Contact Page</h1>} />
         <Route path="/login" element={<Login/>} />

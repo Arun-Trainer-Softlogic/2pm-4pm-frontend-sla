@@ -1,0 +1,18 @@
+-- create table employees (
+-- emp_id int primary key auto_increment,
+-- emp_name varchar(50) not null ,
+-- department varchar(50 ) not null ,
+-- salary decimal (10,2) check(salary > 0),
+-- email varchar(100) unique,
+-- hire_date date ,
+-- status varchar(20) default "active"
+-- )
+-- insert into employees (emp_name , department , salary , email , hire_date , status) 
+-- values 
+-- ('arun', 'IT' , 4000000 , "ar$gmail.com" , '2022-01-10' , 'active'),
+-- ('Priya',   'HR',        28000.00, 'priya@company.com',   '2021-03-15', 'active'),
+-- ('Rahul',   'Finance',   45000.00, 'rahul@company.com',   '2020-07-20', 'inactive'),
+-- ('Sneha',   'IT',        32000.00, 'sneha@company.com',   '2022-11-01', 'active'),
+-- ('Karthik', 'Admin',    50000.00, 'karthik@company.com', '2019-05-25', 'active'),
+-- ('Anjali',  'HR',        26000.00, 'anjali@company.com',  '2023-02-10', 'active'),
+-- ('Vijay',   'Finance',   38000.00, 'vijay@company.com',   '2021-08-18', 'active');

@@ -34,11 +34,11 @@
 -- alter table students
 -- modify id int auto_increment ;
 
-select email , phone  from students ;
---  
+-- select email , phone  from students ;
+-- --  
 
-update students 
-set phone = 909787976
-where id = 1 
+-- update students 
+-- set phone = 909787976
+-- where id = 1 
 
 

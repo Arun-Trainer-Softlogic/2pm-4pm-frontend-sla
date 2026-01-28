@@ -39,11 +39,59 @@
 -- ('Sneha','sneha@company.com','9876543213',32000,'2022-11-01',3);
 
 
+-- CREATE TABLE roles (
+--     role_id INT PRIMARY KEY AUTO_INCREMENT,
+--     role_name VARCHAR(50) UNIQUE NOT NULL
+-- );
 
 
+-- CREATE TABLE employee_roles (
+--     emp_id INT,
+--     role_id INT,
+--     PRIMARY KEY (emp_id, role_id),
+--     FOREIGN KEY (emp_id) REFERENCES employees(emp_id),
+--     FOREIGN KEY (role_id) REFERENCES roles(role_id)
+-- );
 
 
+-- CREATE TABLE payroll (
+--     payroll_id INT PRIMARY KEY AUTO_INCREMENT,
+--     emp_id INT,
+--     basic_salary DECIMAL(10,2),
+--     bonus DECIMAL(10,2),
+--     deductions DECIMAL(10,2),
+--     pay_date DATE,
+--     FOREIGN KEY (emp_id) REFERENCES employees(emp_id)
+-- );
 
+-- CREATE TABLE attendance (
+--     attendance_id INT PRIMARY KEY AUTO_INCREMENT,
+--     emp_id INT,
+--     attendance_date DATE,
+--     status ENUM('Present','Absent','Leave'),
+--     FOREIGN KEY (emp_id) REFERENCES employees(emp_id)
+-- );
+
+
+-- INSERT INTO roles (role_name) VALUES
+-- ('Developer'),
+-- ('HR Manager'),
+-- ('Accountant'),
+-- ('Sales Executive');
+
+
+-- INSERT INTO employee_roles VALUES
+-- (1,1),
+-- (2,2),
+-- (3,1),
+-- (4,3);
+
+
+-- INSERT INTO payroll (emp_id, basic_salary, bonus, deductions, pay_date)
+-- VALUES
+-- (1,30000,5000,2000,'2024-01-31'),
+-- (2,28000,3000,1500,'2024-01-31'),
+-- (3,45000,7000,3000,'2024-01-31');
 
 
 
